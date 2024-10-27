@@ -84,6 +84,13 @@ You can use any method you want for making backups of your database file. I high
 # ExSync Client
 
 - create a google account, signin to google cloud, setup a google cloud project, setup an oauth client for that project, create credentials, download the credentials and save to `secrets/credentials.json`
+  - you'll need to create the secrets folder in the project root
+  - only `credentials.json` is added by the user, the other files are generated
+
+> ![Secrets](<Picture Guide/Secrets.png>)
+
+---
+
 - run `main.ts` with the KeePass plugin (above instructions)
 - when prompted, open the URL shown in terminal window, authenticate with your google drive account, then paste the code and press enter
 
