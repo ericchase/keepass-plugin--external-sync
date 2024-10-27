@@ -2,6 +2,10 @@
 
 This is an extremely involved process of setting up basic synchronization of a database file. Such synchronization is a basic feature expected of password managers, but for lots of reasons, KeePass does not have such a feature. This is my personal attempt at conjuring some code to sync between my pc and my Google Drive. These projects are very muchly hacked together. Setting up a Google Cloud app that can be used with the client can be considered a 3rd project. Details of the Google Cloud app are not provided here. Please consult your local AI for information on how to do that, or send me a message.
 
+https://github.com/PhilippC/keepass2android/issues/1998#issuecomment-2429501151
+
+P.S. The client requires Bun (https://bun.sh/)
+
 ## FAQ
 
 Q. Does this actually work?  
