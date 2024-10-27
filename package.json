@@ -1,0 +1,15 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "^1.1.12",
+    "@types/chrome": "^0.0.271",
+    "@types/node": "^22.8.1",
+    "googleapis": "^144.0.0",
+    "node-html-parser": "^6.1.13",
+    "prettier": "^3.3.3"
+  },
+  "scripts": {
+    "lint": "biome lint --error-on-warnings --write ."
+  }
+}
