@@ -9,13 +9,11 @@ import { CopyFile } from 'lib/ericchase/Platform/Bun/Fs.js';
 import { DeleteFile } from 'lib/ericchase/Platform/Node/Fs.js';
 import { Path } from 'lib/ericchase/Platform/Node/Path.js';
 import { ConsoleError, ConsoleLog } from 'lib/ericchase/Utility/Console.js';
-import { HasProperty } from 'lib/ericchase/Utility/Guard.js';
 import { ConnectionChecker } from 'src/ConnectionChecker.js';
 import { CredentialsPath, LogsPath, ResourceIDPath, ResourcePath, SetupScriptPath, TokenPath } from 'src/constants.js';
 import { U8StreamReadSome } from 'src/lib/ericchase/Algorithm/Stream.js';
 import { StdinTextReader } from 'src/lib/ericchase/Platform/Node/Process.js';
 import { CreateOAuthClient, RefreshAccessToken, VerifyAccessToken } from 'src/OAuth2.js';
-import { WebSocketClient } from 'src/WebSocketClient.js';
 
 if (Bun.argv[2] === undefined) {
   throw 'Missing database file path in command line arguments.';

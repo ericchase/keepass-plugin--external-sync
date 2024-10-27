@@ -1,3 +1,24 @@
+# About
+
+This is an extremely involved process of setting up basic synchronization of a database file. Such synchronization is a basic feature expected of password managers, but for lots of reasons, KeePass does not have such a feature. This is my personal attempt at conjuring some code to sync between my pc and my Google Drive. These projects are very muchly hacked together. Setting up a Google Cloud app that can be used with the client can be considered a 3rd project. Details of the Google Cloud app are not provided here. Please consult your local AI for information on how to do that, or send me a message.
+
+# FAq
+
+Q. Does this actually work?  
+A. Yes, most of the time.
+
+Q. Will this continue working for future KeePass versions?  
+A. No idea. Probably not.
+
+Q. What version of KeePass does this work with right now?  
+A. It is working with `KeePass` version `2.57.1` and `KeePassLibC` version `1.42 - 0x01D0`.
+
+Q. What version of Visual Studio are you using?  
+A. Visual Studio 2022 | .NET Framework 4.6
+
+Q. Can the database automatically sync when remote file is changed?  
+A. No. This requires a Push Notification server on top of everything else so far. I _have_ started working on such a server. You can see that code commented out in the client. All that was left was to start a watch using the Google Drive apis. However, I changed my mind about automatic syncing. There's just too many potential problems that could occur, so I feel safer clicking the `Trigger Ex Sync` to manually do the syncing process.
+
 # ExSync Plugin
 
 - copy `ExSyncPlugin.dll` into the `Plugins` folder of your `KeePass 2` installation
